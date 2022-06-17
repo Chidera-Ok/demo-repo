@@ -22,12 +22,14 @@
                 </div>
 
                 <div class="bottom-content">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="password" placeholder="Password" required>
-                    <input type="button" value="CLAIM YOUR FREE TRIAL" class="btn">
-                    <P style="color:hsl(0, 0%, 70%); font-size: 14px; font-weight:400;">By clicking the button you are agreeing to our <span style="color: red; ">Terms and Conditions</span> </span>
+                    <form action="">
+                        <input type="text" placeholder="First Name" minlength="3" required>
+                        <input type="text" placeholder="Last Name" minlength="3" required>
+                        <input type="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="email@example.com" required>
+                        <input type="password" placeholder="Password" minlength="8" required>
+                        <input type="submit" value="CLAIM YOUR FREE TRIAL" class="btn">
+                    </form>
+                    <P style="color:hsl(0, 0%, 70%); font-size: 14px; font-weight:400;">By clicking the button you are agreeing to our <span style="color: hsl(0, 100%, 74%); ">Terms and Conditions</span> </span>
                     </P>
                 </div>
             </div>
